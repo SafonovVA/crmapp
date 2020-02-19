@@ -1,0 +1,1 @@
+2020/02/19 16:12:12 [error] 25431#25431: *146 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: crmapp.test, request: "GET /customers HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.4-fpm.sock", host: "crmapp.test", referrer: "http://crmapp.test/customers/add"
