@@ -17,4 +17,8 @@ return [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
     ],
+    'modules' => [
+        'gii' => 'yii\gii\Module',
+    ],
+    //'extensions' => require(__DIR__. '/../vendor/yiisoft/extensions.php'),
 ];
