@@ -8,6 +8,9 @@ return [
             'cookieValidationKey' => 'your secret key here',
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'user' => [
+            'identityClass' => 'app\models\user\UserRecord',
+        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,

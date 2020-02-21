@@ -12,6 +12,7 @@
         "yiisoft/yii2-bootstrap": "*"
     },
     "require-dev": {
-        "codeception/module-db": "^1.0"
+        "codeception/module-db": "^1.0",
+        "codeception/module-filesystem": "^1.0"
     }
 }
