@@ -12,6 +12,24 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
         ],
+        'view' => [
+            'renderers' => [
+                'md' => [
+                    'class' => 'app\utilities\MarkdownRenderer',
+                ],
+            ],
+            'theme' => [
+                'class' => yii\base\Theme::class,
+                'basePath' => '@app/themes/snowy'
+            ],
+        ],
+        'response' => [
+            'formatters' => [
+                'yaml' => [
+                    'class' => 'app\utilities\YamlResponseFormatter',
+                ],
+            ],
+        ],
     ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',

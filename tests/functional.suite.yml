@@ -7,7 +7,10 @@
 
 actor: FunctionalTester
 modules:
-    enabled:
-        # add a framework module here
-        - \Helper\Functional
-    step_decorators: ~        
+    enabled: [Db, Filesystem, FunctionalHelper]
+    config:
+        Db:
+            dsn: 'mysql:host=localhost;dbname=crmapp'
+            user: 'root'
+            password: '1'
+            dump: 'tests/_data/dump.sql'
